@@ -322,6 +322,44 @@ function myFunction(num) {
 }
 console.log(array2);
 */
+/*
+const fruits = ['apple','banana','orange'];
+
+const clonef = [...fruits];
+
+const students = [ { id:1 ,name : 'bean', age : 14},{id:2 , name : 'ken', age : 15}];
+const clonestu = [...students];
+
+function getFullName(user) {
+  const firstName = user.firstName;
+  const lastName = user.lastName;
+  return `${firstName} ${lastName}`;
+
+function getFullName(user){
+  return {firstName, lastName}
+};
+
+if (currentUser) {
+  function test() {
+    console.log('Nope.');
+  }
+}
+
+if (currentUser){
+  test = () => {
+    console.log('Nope.');
+  };
+
+*/
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,7 +16,7 @@
   <style>
     input[type=text],
     select {
-      width: 90%;
+      width: 50%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
@@ -34,7 +34,7 @@
 
 
     body {
-      background-color: #f0e8e8;
+      background-color: #0bbe56;
       ;
     }
 
@@ -47,6 +47,48 @@
       font-family: verdana;
       font-size: 20px;
     }
+
+    ul li.checked {
+      background: rgb(5, 34, 196);
+      color: rgb(231, 23, 23);
+      text-decoration: line-through;
+    }
+
+    /* Add a "checked" mark when clicked on */
+    ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+
+    ul li.checked {
+      background: #888;
+      color: #fff;
+      text-decoration: line-through;
+    }
+
+    ul li {
+      cursor: pointer;
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      list-style-type: none;
+      background: rgb(88, 5, 223);
+      font-size: 20px;
+      transition: 0.2s;
+      width: 40%;
+      /* make the list items unselectable */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
   </style>
 </head>
 
@@ -55,27 +97,22 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <!-- Copy script from Internet =tryhow_js_todo -->
-   <script src="todolist.js" async defer></script>
+  <!-- Copy script from Internet =tryhow_js_todo -->
+  <script src="todolist.js" async defer></script>
+   
   
-
-
   <div id="myDIV" class="header">
     <h2>My To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <input type="text" id="myInput" placeholder="ใส่ค่าที่ต้องการ.">
+    <span onclick="newElement()" class="addBtn">เพิ่มข้อมูล</span>
   </div>
 
-  <ul id="myUL">
-    <li>ทำสอบ</li>
-    <li class="checked">ทดสอบ1</li>
+
+  <ul id="myUL" >
+    <!-- <li class="checked">ทดสอบ1</li>  -->
   </ul>
 
- 
 
-  
-
-  
 
 </body>
 
